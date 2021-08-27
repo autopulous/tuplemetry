@@ -137,6 +137,19 @@ namespace Tuplemetry
             }
         }
 
+        /// <summary>
+        /// Spatial dimensions of the coordinate
+        /// </summary>
+        /// <returns>The number of dimensions that the coordinate represents</returns>
+
+        public int Dimensionality
+        {
+            get
+            {
+                return Tuplet.Length;
+            }
+        }
+
         #endregion
 
         #region Length

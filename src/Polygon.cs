@@ -65,9 +65,48 @@ namespace Tuplemetry
         /// <param name="Y"></param>
         /// 
 
-        public void Add(float X, float Y)
+        public void Add(params float[] Ordinates)
         {
-            Vertex.Add(new Coordinate(X, Y));
+            switch (Ordinates.Length)
+            {
+            case 1:
+                Vertex.Add(new Coordinate(Ordinates[0]));
+                break;
+            case 2:
+                Vertex.Add(new Coordinate(Ordinates[0], Ordinates[1]));
+                break;
+            case 3:
+                Vertex.Add(new Coordinate(Ordinates[0], Ordinates[1], Ordinates[2]));
+                break;
+            case 4:
+                Vertex.Add(new Coordinate(Ordinates[0], Ordinates[1], Ordinates[2], Ordinates[3]));
+                break;
+            case 5:
+                Vertex.Add(new Coordinate(Ordinates[0], Ordinates[1], Ordinates[2], Ordinates[3], Ordinates[4]));
+                break;
+            default:
+                throw new IndexOutOfRangeException("Must be a 1, 2, 3, 4, or 5 dimensional Polygon coordinate");
+            }
+        }
+
+        #endregion
+
+        #region Offset
+
+        public void Offset(params float[] Offsets)
+        {
+            if (Offsets.Length != Vertex[0].Dimensionality)
+            {
+                throw new IndexOutOfRangeException("Polygon dimensionality differs from offset dimensionality");
+            }
+
+            foreach (Coordinate Point in Vertex)
+            {
+                for (int i = (Offsets.Length < Point.Tiplet.Length ? Offsets.Length : Point.Tiplet.Length) - 1; i > 0; i--)
+                {
+                    Point.Tiplet[i] += Offsets[i];
+                }
+            }
         }
 
         #endregion
