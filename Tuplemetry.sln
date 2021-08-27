@@ -1,0 +1,25 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuplemetry", "src\Tuplemetry.csproj", "{B88852A8-02E9-401D-A185-58948DDF3AD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuplemetryTester", "tst\TuplemetryTester.csproj", "{5C026DD6-1B6E-490D-8653-9D611FD14E80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B88852A8-02E9-401D-A185-58948DDF3AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88852A8-02E9-401D-A185-58948DDF3AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88852A8-02E9-401D-A185-58948DDF3AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88852A8-02E9-401D-A185-58948DDF3AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C026DD6-1B6E-490D-8653-9D611FD14E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C026DD6-1B6E-490D-8653-9D611FD14E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C026DD6-1B6E-490D-8653-9D611FD14E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C026DD6-1B6E-490D-8653-9D611FD14E80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

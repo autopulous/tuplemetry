@@ -1,0 +1,24 @@
+Lines (Line Segments),,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,A,B,,,(A - B),,Parallel,,,,A,B,,,(A - B),,Parallel,
+X,10,-2,,A-B Length,12,,A-B Length * C-D Height,60,,X,110,98,,A-B Length,12,,A-B Length * C-D Height,-60
+Y,-17,-2,,A-B Height,-15,,A-B Height * C-D Length,60,,Y,-67,-52,,A-B Height,-15,,A-B Height * C-D Length,-60
+,C,D,,,(C - D),,,,,,C,D,,,(C - D),,,
+X,-10,-6,,C-D Length,-4,,,,,X,4,0,,C-D Length,4,,C and D swapped,
+Y,8,3,,C-D Height,5,,,,,Y,1003,1008,,C-D Height,-5,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,A,B,,,(A - B),,Parallel,,,,A,B,,,(A - B),,Perpendicular,
+X,-40,-52,,A-B Length,12,,A-B Length * C-D Height,60,,X,110,98,,A-B Length,12,,A-B Length * C-D Height,-60
+Y,-17,-2,,A-B Height,-15,,A-B Height * C-D Length,60,,Y,-67,-52,,A-B Height,-15,,A-B Height * C-D Length,60
+,C,D,,,(C - D),,,,,,C,D,,,(C - D),,,
+X,-10,-6,,C-D Length,-4,,,,,X,-4,0,,C-D Length,-4,,signs swapped,
+Y,8,3,,C-D Height,5,,,,,Y,1003,1008,,C-D Height,-5,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,A,B,,,(A - B),,Parallel,,,,,,,,,,,
+X,110,98,,A-B Length,12,,A-B Length * C-D Height,60,,,,,,,,,,
+Y,-67,-52,,A-B Height,-15,,A-B Height * C-D Length,60,,,,,,,,,,
+,C,D,,,(C - D),,,,,,,,,,,,,
+X,0,4,,C-D Length,-4,,,,,,,,,,,,,
+Y,1008,1003,,C-D Height,5,,,,,,,,,,,,,
